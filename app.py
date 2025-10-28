@@ -6,13 +6,13 @@ from io import BytesIO
 from xlsxwriter import Workbook
 
 # Encabezado personalizado
-st.set_page_config(page_title="Evaluación de Sitios Públicos - León GTO", layout="wide")
+st.set_page_config(page_title="Evaluación de Sitios Públicos", layout="wide")
 
 # Logo (opcional)
 st.image("NetHome.jpg", width=250)  # Asegúrate de tener el archivo en el mismo directorio
 
 # Título y descripción
-st.title("Evaluación de Sitios Públicos con Conectividad")
+st.title("Primer evaluación de Sitios Públicos con Conectividad")
 st.markdown("""
 Este mapa interactivo presenta los resultados de la revisión técnica de más de 800 sitios públicos en León, Silao, Guanajuato, Irapuato, Salamanca y Celaya evaluando su conectividad a internet mediante pruebas de velocidad, estabilidad y accesibilidad.
 
@@ -164,3 +164,4 @@ df = pd.DataFrame(data)
 
 # Mostrar tabla
 st.dataframe(df, use_container_width=True)
+
