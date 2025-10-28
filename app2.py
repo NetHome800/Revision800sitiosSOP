@@ -28,7 +28,7 @@ Este mapa interactivo presenta los resultados de la revisión técnica de más d
 """)
 
 # Cargar datos
-df = pd.read_excel('Revisión 800 sitios.xlsx', sheet_name='BD1')
+df = pd.read_excel('Revisión 800 sitios.xlsx', sheet_name='BD2')
 
 # Filtrar datos válidos
 df = df.dropna(subset=['Latitud', 'Longitud', 'Bajada', 'Subida', 'Calificación'])
@@ -164,3 +164,4 @@ df = pd.DataFrame(data)
 
 # Mostrar tabla
 st.dataframe(df, use_container_width=True)
+
