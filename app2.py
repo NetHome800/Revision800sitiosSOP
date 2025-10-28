@@ -6,7 +6,7 @@ from io import BytesIO
 from xlsxwriter import Workbook
 
 # Encabezado personalizado
-st.set_page_config(page_title="Evaluación de Sitios Públicos - León GTO", layout="wide")
+st.set_page_config(page_title="Evaluación de Sitios Públicos Segunda visita", layout="wide")
 
 # Logo (opcional)
 st.image("NetHome.jpg", width=250)  # Asegúrate de tener el archivo en el mismo directorio
@@ -164,4 +164,5 @@ df = pd.DataFrame(data)
 
 # Mostrar tabla
 st.dataframe(df, use_container_width=True)
+
 
